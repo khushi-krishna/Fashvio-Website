@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<!-- Bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Style sheet -->
+<link rel="stylesheet" href="Public/styles.css">
+<link rel="stylesheet" href="Public/account.css">
+  <meta charset="utf-8">
+  <title>Manage Account</title>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/4a2d232d52.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <section id="header">
+
+     <div>
+     <ul class="nav justify-content-end" id="navbar">
+    
+      <li class="nav-item ">
+        <a class="nav-link active home" aria-current="page" href="index.html" style="color:#85586F;">Home</a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="shop.html" style="color:black;">Shop</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="about.html" style="color:black;">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active"  href="account.html" style="color:black;"><i class="fa-solid fa-user"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active"  href="cart.html" style="color:black;"><i class="fa-solid fa-cart-shopping "></i></a>
+    </li>
+  </ul>
+   </div>
+  </section>
+
+
+
+  <section id="form">
+    <div class="container">
+    <div class="py-5 text-center ">
+     <img src="Public/images/userImg.webp" class="user" alt="" >
+     <h2>Your Account</h2>
+   </div>
+     <div class="col-md-7 col-lg-8 form">
+       <h4 class="mb-3">Billing address</h4>
+       <form class="needs-validation" novalidate>
+         <div class="row g-3">
+           <div class="col-sm-6">
+             <label for="firstName" class="form-label">First name</label>
+             <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+             <div class="invalid-feedback">
+               Valid first name is required.
+             </div>
+           </div>
+
+           <div class="col-sm-6">
+             <label for="lastName" class="form-label">Last name</label>
+             <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+             <div class="invalid-feedback">
+               Valid last name is required.
+             </div>
+           </div>
+
+           <div class="col-12">
+             <label for="username" class="form-label">Username</label>
+             <div class="input-group has-validation">
+               <span class="input-group-text">@</span>
+               <input type="text" class="form-control" id="username" placeholder="Username" required>
+             <div class="invalid-feedback">
+                 Your username is required.
+               </div>
+             </div>
+           </div>
+
+           <div class="col-12">
+             <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+             <input type="email" class="form-control" id="email" placeholder="you@example.com">
+             <div class="invalid-feedback">
+               Please enter a valid email address for shipping updates.
+             </div>
+           </div>
+
+           <div class="col-12">
+             <label for="address" class="form-label">Address</label>
+             <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+             <div class="invalid-feedback">
+               Please enter your shipping address.
+             </div>
+           </div>
+
+           <div class="col-12">
+             <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+             <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+           </div>
+
+           <div class="col-md-5">
+             <label for="country" class="form-label">Country</label>
+             <select class="form-select" id="country" required>
+               <option value="">Choose...</option>
+               <option>United States</option>
+             </select>
+             <div class="invalid-feedback">
+               Please select a valid country.
+             </div>
+           </div>
+
+           <div class="col-md-4">
+             <label for="state" class="form-label">State</label>
+             <select class="form-select" id="state" required>
+               <option value="">Choose...</option>
+               <option>California</option>
+             </select>
+             <div class="invalid-feedback">
+               Please provide a valid state.
+             </div>
+           </div>
+
+           <div class="col-md-3">
+             <label for="zip" class="form-label">Zip</label>
+             <input type="text" class="form-control" id="zip" placeholder="" required>
+             <div class="invalid-feedback">
+               Zip code required.
+             </div>
+           </div>
+         </div>
+
+         <hr class="my-4">
+
+         <div class="form-check">
+           <input type="checkbox" class="form-check-input" id="same-address">
+           <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+         </div>
+
+         <div class="form-check">
+           <input type="checkbox" class="form-check-input" id="save-info">
+           <label class="form-check-label" for="save-info">Save this information for next time</label>
+         </div>
+
+         <hr class="my-4">
+         <button class="w-50 btn btn-primary btn-lg" type="submit">save</button>
+           </div>
+         </div>
+  </section>
+
+  <!-- Footer -->
+
+  <section id="footer">
+    <i class="fab footer-icon fa-twitter"style="padding-left: 580px";></i> <i class="fab footer-icon fa-facebook"></i> <i class="fab footer-icon fa-instagram"></i> <i class="fas footer-icon fa-envelope"></i>
+    <p class="footertxt">© Copyright 2022 Fashvio</p>
+
+  </section>
+
+</body>
+
+</html>

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Google font link -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<!-- Bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Style sheet -->
+<link rel="stylesheet" href="Public/styles.css">
+  <meta charset="utf-8">
+  <title>Shop Page</title>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/4a2d232d52.js" crossorigin="anonymous"></script>
+  <!-- add to cart script -->
+    <script src="cart.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <section id="header">
+
+     <div>
+     <ul class="nav justify-content-end" id="navbar">
+    
+      <li class="nav-item ">
+        <a class="nav-link active home" aria-current="page" href="index.html" style="color:#85586F;">Home</a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="shop.html" style="color:black;">Shop</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="about.html" style="color:black;">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active"  href="cart.html" style="color:black;"><i class="fa-solid fa-user"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active"  href="cart.html" style="color:black;"><i class="fa-solid fa-cart-shopping "></i></a>
+    </li>
+  </ul>
+   </div>
+  </section>
+
+
+
+
+
+
+<!-- NEW COLLECTION SECTION -->
+
+<section class="NewCollection-head">
+  <h2 style="text-align:center; font-family: 'Oswald', sans-serif;">Featured Products</h2>
+  <p style="text-align:center; font-family: 'Quicksand', sans-serif;">New collections</p>
+</section>
+
+
+<section id="NewCollection-Card">
+  <div class="row">
+    <div class="women-column col-lg-4 col-md-6">
+      <div class="card" id="item1">
+        <div class="card-header">
+        </div>
+        <div data-id="1" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec1.jpg" alt="frock-picture">
+          <div class="details">
+            <h3 style="text-align: center">Sweartshirt</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $27.44</span><br />
+             <a href="#"><button onclick="addToCart(item1)"class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6" style="padding-top:32px;">
+      <div class="card"id="item2">
+        <div class="card-header">
+        </div>
+        <div data-id="2" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec2.jpg" alt="sweater-picture">
+          <div class="details">
+            <h3 style="text-align: center;">Sweater</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $28.44</span><br />
+             <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-12" style="padding-top:32px;">
+      <div class="card" id="item3">
+        <div class="card-header">
+        </div>
+        <div data-id="3" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec3.jpg" alt="jeans-picture">
+          <div class="details">
+            <h3 style="text-align: center;">Jeans</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $32.44</span><br />
+             <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<section id="NewCollection-Card">
+    <div class="row">
+      <div class="women-column col-lg-4 col-md-6">
+        <div class="card" id="item4">
+          <div class="card-header">
+          </div>
+          <div data-id="4" class="card-body">
+            <img class="frock" src="Public/images/NewCollectionImg/NewCollec4.jpg" alt="man1-picture">
+            <div class="details">
+              <h3 style="text-align: center;">Jeans</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $32.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6" style="padding-top:32px;">
+        <div class="card" id="item5">
+          <div class="card-header">
+          </div>
+          <div data-id="5" class="card-body">
+            <img class="frock" src="Public/images/NewCollectionImg/NewCollec5.jpg" alt="sweartshirt-picture">
+            <div class="details">
+              <h3 style="text-align: center;">Highneck sweater</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $31.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-12" style="padding-top:32px;">
+        <div class="card" id="item6">
+          <div class="card-header">
+          </div>
+          <div data-id="6" class="card-body">
+            <img class="frock" src="Public/images/NewCollectionImg/NewCollec6.jpg" alt="kurta-picture">
+            <div class="details">
+                <h3 style="text-align: center;">Sweater</h3>
+                <p style="text-align:center;">
+                <span  class="price">Price: $30.44</span><br />
+                 <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section id="NewCollection-Card">
+  <div class="row">
+    <div class="women-column col-lg-4 col-md-6">
+      <div class="card" id="item7">
+        <div class="card-header">
+        </div>
+        <div data-id="7" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollection7.jpg" alt="kid1-picture">
+          <div class="details">
+              <h3 style="text-align: center;">Shrug</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $18.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6" style="padding-top:32px;">
+      <div class="card" id="item8">
+        <div class="card-header">
+        </div>
+        <div data-id="8" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec8.jpg" alt="kurta-picture">
+          <div class="details">
+            <h3 style="text-align: center;">T-shirt</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $20.44</span><br />
+             <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-12" style="padding-top:32px;">
+      <div class="card" id="item9">
+        <div class="card-header">
+        </div>
+        <div data-id="9" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec9.jpg" alt="kid3-picture">
+          <div class="details">
+            <h3 style="text-align: center;">T-shirt</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $23.44</span><br />
+             <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section id="NewCollection-Card">
+  <div class="row">
+    <div class="women-column col-lg-4 col-md-6">
+      <div class="card" id="item10">
+        <div class="card-header">
+        </div>
+        <div data-id="10" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec10.jpg" alt="necklace-picture">
+          <div class="details">
+              <h3 style="text-align: center;">Jacket</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $33.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6" style="padding-top:32px;">
+      <div class="card" id="item11">
+        <div class="card-header">
+        </div>
+        <div data-id="11" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec11.jpg" alt="sunglasses-picture">
+          <div class="details">
+            <h3 style="text-align: center;">Jacket</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $33.44</span><br />
+             <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pricing-column col-lg-4 col-md-12" style="padding-top:32px;">
+      <div class="card" id="item12">
+        <div class="card-header">
+        </div>
+        <div data-id="12" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec12.jpg"alt="watch-picture">
+            <div class="details">
+              <h3 style="text-align: center;">Pullover</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $33.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+            </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<section id="NewCollection-Card">
+  <div class="row">
+    <div class="women-column col-lg-4 col-md-6">
+      <div class="card" id="item13">
+        <div class="card-header">
+        </div>
+        <div data-id="10" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec13.jpg"alt="necklace-picture">
+          <div class="details">
+              <h3 style="text-align: center;">Top</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $21.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6" style="padding-top:32px;">
+      <div class="card" id="item14">
+        <div class="card-header">
+        </div>
+        <div data-id="11" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec14.jpg" alt="sunglasses-picture">
+          <div class="details">
+            <h3 style="text-align: center;">Top</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $29.44</span><br />
+             <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-12" style="padding-top:32px;">
+      <div class="card" id="item15">
+        <div class="card-header">
+        </div>
+        <div data-id="12" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec15.jpg"
+            alt="watch-picture">
+            <div class="details">
+              <h3 style="text-align: center;">Pant</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $22.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+            </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<section id="NewCollection-Card">
+  <div class="row">
+    <div class="women-column col-lg-4 col-md-6">
+      <div class="card" id="item16">
+        <div class="card-header">
+        </div>
+        <div data-id="10" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec16.jpg" alt="necklace-picture">
+          <div class="details">
+              <h3 style="text-align: center;">Dress</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $25.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6" style="padding-top:32px;">
+      <div class="card" id="item17">
+        <div class="card-header">
+        </div>
+        <div data-id="11" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec17.jpg" alt="sunglasses-picture">
+          <div class="details">
+            <h3 style="text-align: center;">Jumpsuit</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $28.44</span><br />
+             <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-12" style="padding-top:32px;">
+      <div class="card" id="item18">
+        <div class="card-header">
+        </div>
+        <div data-id="12" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec18.jpg"
+            <div class="details">
+              <h3 style="text-align: center;">Top</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $25.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+            </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<section id="NewCollection-Card">
+  <div class="row">
+    <div class="women-column col-lg-4 col-md-6">
+      <div class="card" id="item19">
+        <div class="card-header">
+        </div>
+        <div data-id="10" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec19.jpg"alt="necklace-picture">
+          <div class="details">
+              <h3 style="text-align: center;">T-shirt</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $20.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6" style="padding-top:32px;">
+      <div class="card" id="item20">
+        <div class="card-header">
+        </div>
+        <div data-id="11" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec20.jpg" alt="sunglasses-picture">
+          <div class="details">
+            <h3 style="text-align: center;">T-shirt</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $20.44</span><br />
+             <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-12" style="padding-top:32px;">
+      <div class="card" id="item21">
+        <div class="card-header">
+        </div>
+        <div data-id="12" class="card-body">
+          <img class="frock" src="Public/images/NewCollectionImg/NewCollec21.jpg"
+            alt="watch-picture">
+            <div class="details">
+              <h3 style="text-align: center;">T-shirt</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $20.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+            </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+
+<!-- New Arrivals -->
+<section class="NewCollection-head">
+  <h2 style="text-align:center; font-family: 'Oswald', sans-serif;">New Collections of Accessories</h2>
+  <p style="text-align:center; font-family: 'Quicksand', sans-serif;">Accessories to Groom your Fashion Sense</p>
+</section>
+
+
+<section id="NewCollection-Card">
+  <div class="row">
+    <div class="women-column col-lg-4 col-md-6">
+      <div class="card" id="item22">
+        <div class="card-header">
+        </div>
+        <div data-id="1" class="card-body">
+          <img class="frock1" src="Public/images/Accessories/NewArrivals1.jpg" alt="frock-picture">
+          <div class="details">
+            <h3 style="text-align: center">Srunchies</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $27.44</span><br />
+             <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6" style="padding-top:32px;">
+      <div class="card" id="item23">
+        <div class="card-header">
+        </div>
+        <div data-id="2" class="card-body">
+          <img class="frock1" src="Public/images/Accessories/NewArrivals2.jpg" alt="sweater-picture">
+          <div class="details">
+            <h3 style="text-align: center;">Watch</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $28.44</span><br />
+             <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-12" style="padding-top:32px;">
+      <div class="card" id="item24">
+        <div class="card-header">
+        </div>
+        <div data-id="3" class="card-body">
+          <img class="frock1" src="Public/images/Accessories/NewArrivals3.jpg" alt="jeans-picture">
+          <div class="details">
+            <h3 style="text-align: center;">Earrings</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $32.44</span><br />
+             <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<section id="NewCollection-Card">
+    <div class="row">
+      <div class="women-column col-lg-4 col-md-6">
+        <div class="card" id="item25">
+          <div class="card-header">
+          </div>
+          <div data-id="4" class="card-body">
+            <img class="frock1" src="Public/images/Accessories/NewArrivals4.jpg" alt="man1-picture">
+            <div class="details">
+              <h3 style="text-align: center;">Necklace</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $32.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6" style="padding-top:32px;">
+        <div class="card" id="item26">
+          <div class="card-header">
+          </div>
+          <div data-id="5" class="card-body">
+            <img class="frock1" src="Public/images/Accessories/NewArrivals5.jpg" alt="sweartshirt-picture">
+            <div class="details">
+              <h3 style="text-align: center;">Ring</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $31.44</span><br />
+               <a href="#"><i class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></i></a>
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-12" style="padding-top:32px;">
+        <div class="card" id="item27">
+          <div class="card-header">
+          </div>
+          <div data-id="6" class="card-body">
+            <img class="frock1" src="Public/images/Accessories/NewArrivals6.jpg" alt="kurta-picture">
+            <div class="details">
+                <h3 style="text-align: center;">Set</h3>
+                <p style="text-align:center;">
+
+                <span  class="price">Price: $30.44</span><br />
+                 <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section id="NewCollection-Card">
+  <div class="row">
+    <div class="women-column col-lg-4 col-md-6">
+      <div class="card" id="item28">
+        <div class="card-header">
+        </div>
+        <div data-id="7" class="card-body">
+          <img class="frock1" src="Public/images/Accessories/NewArrivals7.jpg" alt="kid1-picture">
+          <div class="details">
+              <h3 style="text-align: center;">Bracelet</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $18.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6" style="padding-top:32px;">
+      <div class="card" id="item29">
+        <div class="card-header">
+        </div>
+        <div data-id="8" class="card-body">
+          <img class="frock1" src="Public/images/Accessories/NewArrivals8.jpg" alt="kurta-picture">
+          <div class="details">
+            <h3 style="text-align: center;">Ankle chain</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $20.44</span><br />
+             <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-12" style="padding-top:32px;">
+      <div class="card" id="item30">
+        <div class="card-header">
+        </div>
+        <div data-id="9" class="card-body">
+          <img class="frock1" src="Public/images/Accessories/NewArrivals9.jpg" alt="kid3-picture">
+          <div class="details">
+            <h3 style="text-align: center;">Bracelets</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $23.44</span><br />
+             <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section id="NewCollection-Card">
+  <div class="row">
+    <div class="women-column col-lg-4 col-md-6">
+      <div class="card" id="item31">
+        <div class="card-header">
+        </div>
+        <div data-id="10" class="card-body">
+          <img class="frock1" src="Public/images/Accessories/NewArrivals10.jpg" alt="necklace-picture">
+          <div class="details">
+              <h3 style="text-align: center;">Bracelet</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $33.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6" style="padding-top:32px;">
+      <div class="card" id="item32">
+        <div class="card-header">
+        </div>
+        <div data-id="11" class="card-body">
+          <img class="frock1" src="Public/images/Accessories/NewArrivals11.jpg" alt="sunglasses-picture">
+          <div class="details">
+            <h3 style="text-align: center;">Earrings</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $33.44</span><br />
+             <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pricing-column col-lg-4 col-md-12" style="padding-top:32px;">
+      <div class="card" id="item33">
+        <div class="card-header">
+        </div>
+        <div data-id="12" class="card-body">
+          <img class="frock1" src="Public/images/Accessories/NewArrivals12.jpg"alt="watch-picture">
+            <div class="details">
+              <h3 style="text-align: center;">Ring</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $33.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+            </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<section id="NewCollection-Card">
+  <div class="row">
+    <div class="women-column col-lg-4 col-md-6">
+      <div class="card" id="item34">
+        <div class="card-header">
+        </div>
+        <div data-id="10" class="card-body">
+          <img class="frock1" src="Public/images/Accessories/NewArrivals13.jpg"alt="necklace-picture">
+          <div class="details">
+              <h3 style="text-align: center;">Srunchies</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $21.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6" style="padding-top:32px;">
+      <div class="card" id="item35">
+        <div class="card-header">
+        </div>
+        <div data-id="11" class="card-body">
+          <img class="frock1" src="Public/images/Accessories/NewArrivals14.jpg" alt="sunglasses-picture">
+          <div class="details">
+            <h3 style="text-align: center;">Pendants</h3>
+            <p style="text-align:center;">
+            <span  class="price">Price: $29.44</span><br />
+             <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-12" style="padding-top:32px;">
+      <div class="card" id="item36">
+        <div class="card-header">
+        </div>
+        <div data-id="12" class="card-body">
+          <img class="frock1" src="Public/images/Accessories/NewArrivals15.jpg"alt="watch-picture">
+            <div class="details">
+              <h3 style="text-align: center;">Bracelet</h3>
+              <p style="text-align:center;">
+              <span  class="price">Price: $22.44</span><br />
+               <a href="#"><button class="fa-solid fa-cart-shopping fa-1x cart-icon "  ></button></a>
+            </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+
+<section id="footer">
+  <i class="fab footer-icon fa-twitter"style="padding-left: 580px";></i> <i class="fab footer-icon fa-facebook"></i> <i class="fab footer-icon fa-instagram"></i> <i class="fas footer-icon fa-envelope"></i>
+  <p class="footertxt">© Copyright 2022 Fashvio</p>
+
+</section>
+
+
+
+
+</body>
+
+</html>
